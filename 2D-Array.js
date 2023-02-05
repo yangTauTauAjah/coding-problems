@@ -18,6 +18,8 @@ for (let i = 0; i < (inputMatrix.length - 2); i++) {
     
   }
   
-  result.push(row)
+  result.push(row.reduce((a,b) => a > b ? a : b, 0))
   
 }
+
+result.reduce((a,b) => a > b ? a : b, 0)
